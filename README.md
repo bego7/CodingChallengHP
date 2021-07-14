@@ -1,7 +1,7 @@
 ﻿# CodingChallengHP
 
-##Instructions to run API
+## Instructions to run API
 nodemon index.js
 
-##Instructions to run React App
-##npm start
+## Instructions to run React App
+npm start
