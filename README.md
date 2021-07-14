@@ -1,7 +1,10 @@
 ﻿# CodingChallengHP
 
 ## Instructions to run API
-nodemon index.js
+Go to folder backend
+Run npm install
+Run nodemon index.js
 
 ## Instructions to run React App
-npm start
+Go to folder frontend
+Run npm start
