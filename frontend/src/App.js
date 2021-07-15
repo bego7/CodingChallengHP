@@ -7,25 +7,25 @@ function App() {
   const [albumName, filterAlbums] = useState('');
   const [albums, setAlbums] = useState([]);
 
+  // call to the specific artist route, send and artistName as a parameter
   function callApi(e){
     setArtistName(e.target.value);
-    axios.get(`http://localhost:3000/api/albums/${artistName}`)
+    axios.get(`http://localhost:5000/api/albums/${artistName}`)
     .then(function(response){
       const albums =response.data.data.results;
       setAlbums(albums);
-      console.log(response);
     })
     .catch(function(error){
       console.log(error);
     })
   }
 
+  // call to the general route that displays adele´s albums by default
   function call(){
-    axios.get('http://localhost:3000')
+    axios.get('http://localhost:5000')
     .then(function(response){
       const albums =response.data.data.results;
       setAlbums(albums);
-      console.log(albums);
     })
     .catch(function(error){
       console.log(error);
@@ -39,6 +39,8 @@ function App() {
   return (
     
     <div className="App">
+
+      {/* input field to filter by artist*/}
       <input
         placeholder="Type artist name to display all its albums"
         value={artistName}
@@ -46,6 +48,8 @@ function App() {
       ></input>
 
       <br/>
+
+      {/* input field to filter the displayed albums*/}
       <input
         placeholder="Filter the currently displayed albums"
         value={albumName}
@@ -59,17 +63,15 @@ function App() {
         {
           
               albums.filter((album)=>{
-                if (albumName == "") {
+                if (albumName === "") {
                   return albums;
                 } 
                 else if (album.collectionName.includes(albumName)){
-                  console.log(albumName);
                   return albums;
                 }
               })
               .map((album)=>{
                 return(
-                  
                     <div className="card-item" key={album.collectionId} >
                       <h2>{album.collectionName}</h2>
                       <img src={album.artworkUrl100} alt=""/>
@@ -77,8 +79,7 @@ function App() {
                 
                 )
                 
-              })
-            
+              }) 
         }
       </div>
     </div>

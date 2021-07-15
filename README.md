@@ -5,23 +5,27 @@
 ## Instructions to run API
 Go to folder backend
 <br>
-Run npm install
+Run npm init
 <br>
 Run nodemon index.js
 <br>
 
 
 ## Testing the API
-Run 
+Run npm test
 
 ## Instructions to run React App
 Go to folder frontend
+<br>
+Run npm init
 <br>
 Run npm start
 <br>
 On your browser go to localhost:3000, the app will be displayed there
 
 ## Testing the React App
+
+
 ----
 ## Task 2
 Go inside the Task2 folder
