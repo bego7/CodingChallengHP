@@ -5,7 +5,7 @@
 ## Instructions to run API
 Go to folder backend
 <br>
-Run npm init
+Run npm install
 <br>
 Run nodemon index.js
 <br>
@@ -17,7 +17,7 @@ Run npm test
 ## Instructions to run React App
 Go to folder frontend
 <br>
-Run npm init
+Run npm install
 <br>
 Run npm start
 <br>
