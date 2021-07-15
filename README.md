@@ -23,14 +23,12 @@ Run npm start
 <br>
 On your browser go to localhost:3000, the app will be displayed there
 
-## Testing the React App
-
 
 ----
 ## Task 2
 Go inside the Task2 folder
 <br>
-Inside the folder there are 2 files, refactor.js which contains the refactored code and questions.txt that contains the answers to the given questions
+Inside the folder there are 2 files, refactor.js which contains the refactored code and Questions.pdf that contains the answers to the given questions
 
 ----
 ## Bonus
